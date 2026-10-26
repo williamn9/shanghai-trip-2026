@@ -9,6 +9,12 @@ onScroll();
 window.addEventListener("scroll", onScroll, { passive: true });
 
 const places = {
+  westKowloon: {
+    name: "香港西九龍站",
+    lat: 22.3038,
+    lng: 114.1655,
+    note: "G900 動臥出發",
+  },
   hongqiao: { name: "上海虹橋駅", lat: 31.1946, lng: 121.3202, note: "動臥／城際樞紐" },
   hotel: {
     name: "人民廣場／南京東路酒店區",
@@ -28,6 +34,7 @@ const places = {
 };
 
 const shortLabels = {
+  westKowloon: "西九",
   hongqiao: "虹橋",
   hotel: "飯店",
   yuyuan: "豫園",
@@ -42,6 +49,7 @@ const shortLabels = {
 };
 
 const dateLabels = {
+  day0: "11/13",
   day1: "11/14",
   day2: "11/15",
   day3: "11/16",
@@ -49,6 +57,9 @@ const dateLabels = {
 };
 
 const routeMeta = {
+  day0: {
+    caption: "11/13：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
+  },
   day1: {
     caption: "11/14：虹橋 → 酒店 → 豫園 → 外灘／陸家嘴。",
   },
@@ -64,6 +75,11 @@ const routeMeta = {
 };
 
 const routes = {
+  day0: {
+    color: "#5c6f7d",
+    path: ["westKowloon", "hongqiao"],
+    markers: ["westKowloon", "hongqiao"],
+  },
   day1: {
     color: "#4a6d82",
     path: ["hongqiao", "hotel", "yuyuan", "bund", "lujiazui"],
