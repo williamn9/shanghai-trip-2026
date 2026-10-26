@@ -20,7 +20,7 @@ const places = {
     name: "人民廣場／南京東路酒店區",
     lat: 31.2335,
     lng: 121.476,
-    note: "四晚連住基地",
+    note: "三晚連住基地",
   },
   yuyuan: { name: "豫園／城隍廟", lat: 31.2272, lng: 121.492, note: "園林與小吃" },
   bund: { name: "外灘", lat: 31.2404, lng: 121.4905, note: "天際線與夜景" },
