@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>上海家庭之旅 2026</title>
+  <meta name="description" content="2026 年 11 月 15–20 日｜香港西九龍 overnight 高鐵動臥 · 上海四晚 · 杭州＋蘇州" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top">上海 · 2026</a>
+    <nav class="day-nav" role="tablist" aria-label="行程導覽">
+      <button type="button" class="day-tab" role="tab" id="tab-info" aria-controls="panel-info" aria-selected="false" data-day="info">總覽</button>
+      <button type="button" class="day-tab is-active" role="tab" id="tab-day1" aria-controls="panel-day1" aria-selected="true" data-day="day1">11/16</button>
+      <button type="button" class="day-tab" role="tab" id="tab-day2" aria-controls="panel-day2" aria-selected="false" data-day="day2">11/17</button>
+      <button type="button" class="day-tab" role="tab" id="tab-day3" aria-controls="panel-day3" aria-selected="false" data-day="day3">11/18</button>
+      <button type="button" class="day-tab" role="tab" id="tab-day4" aria-controls="panel-day4" aria-selected="false" data-day="day4">11/19</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="旅程首頁">
+      <div class="hero-media" role="img" aria-label="上海外灘與江南水光氛圍"></div>
+      <div class="hero-copy">
+        <p class="brand">上海家庭之旅</p>
+        <h1>夕發朝至，上海 · 杭州 · 蘇州</h1>
+        <p class="lede">四口之家 · 動臥高鐵 · 四晚上海基地 · 一天西湖、一天園林。</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#days">選擇每日行程</a>
+          <a class="btn btn-ghost" href="#info" data-select-day="info">行程資訊</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="days" class="section days">
+      <div class="section-inner">
+        <h2 id="days-title">每日行程</h2>
+        <p class="section-lede" id="days-lede">頂部選日期，只顯示當日行程、路線與預約連結。</p>
+
+        <div class="day-panels">
+          <article class="day-panel" role="tabpanel" id="panel-info" aria-labelledby="tab-info" data-day="info" hidden>
+            <div class="vibe-collage" aria-label="旅程氛圍拼貼">
+              <figure class="day-photo">
+                <img src="photos/bund-night.jpg" alt="上海外灘夜景燈光" width="1920" height="1280" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/westlake.jpg" alt="杭州西湖斷橋一帶" width="1280" height="720" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/suzhou-garden.jpg" alt="蘇州拙政園池塘與亭廊" width="1280" height="960" loading="lazy" />
+              </figure>
+            </div>
+            <p class="vibe-caption">氛圍速覽：外灘夜色 · 西湖開闊 · 蘇州園林靜謐（照片來自 Wikimedia Commons）。</p>
+
+            <div class="info-block">
+              <h3>行程總覽</h3>
+              <p class="info-lede">多一晚之後，杭州西湖與蘇州園林都排得進，不必二選一；酒店連住上海，免搬行李。</p>
+              <dl class="meta-grid">
+                <div>
+                  <dt>旅遊日期</dt>
+                  <dd>2026 年 11 月 15 日（日）夜出發 – 11 月 20 日（五）晨返港</dd>
+                </div>
+                <div>
+                  <dt>同行人員</dt>
+                  <dd>4 人（我、太太、女兒 15 歲、女兒 13 歲）</dd>
+                </div>
+                <div>
+                  <dt>住宿</dt>
+                  <dd>上海人民廣場／南京東路一帶 · <strong>4 晚</strong>連住</dd>
+                </div>
+                <div>
+                  <dt>核心原則</dt>
+                  <dd>動臥省白天 · 杭州看風景 · 蘇州看園林 · 無迪士尼</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="info-block logistics">
+              <h3>高鐵動臥（夕發朝至）</h3>
+              <p class="info-lede">去程周日 G900、回程周四 G895，皆在動臥營運日。城際日皆自<strong>上海虹橋</strong>出發最省事。</p>
+
+              <div class="split">
+                <article class="log-block">
+                  <h4>去程 G900</h4>
+                  <p class="time-line">11 月 15 日（日）夜</p>
+                  <p class="route">香港西九龍 <span>20:00</span></p>
+                  <p class="route arrow" aria-hidden="true">↓</p>
+                  <p class="route">上海虹橋 <span>約 06:58+1</span></p>
+                  <p class="note">動臥 · 建議四人相鄰床位</p>
+                </article>
+                <article class="log-block">
+                  <h4>回程 G895</h4>
+                  <p class="time-line">11 月 19 日（四）夜</p>
+                  <p class="route">上海虹橋 <span>20:15</span></p>
+                  <p class="route arrow" aria-hidden="true">↓</p>
+                  <p class="route">香港西九龍 <span>07:25+1</span></p>
+                  <p class="note">多一天緩衝，回程不趕</p>
+                </article>
+              </div>
+
+              <article class="hotel">
+                <h4>住宿：人民廣場／南京東路（四晚）</h4>
+                <p>地鐵 1／2／8 交匯；去虹橋走 2 號線約 40–50 分。杭州、蘇州當日來回都從虹橋進出。</p>
+                <p class="booking-links">
+                  <a href="https://www.highspeed.mtr.com.hk/" target="_blank" rel="noopener">MTR 高鐵票務</a>
+                  <a href="https://www.12306.cn/" target="_blank" rel="noopener">12306</a>
+                </p>
+              </article>
+            </div>
+
+            <div class="info-block">
+              <h3>杭州 vs 蘇州（怎麼分）</h3>
+              <p class="info-lede">多一天後兩者都去：杭州主打「好看」，蘇州主打「園林」。</p>
+              <ul class="prep-list">
+                <li><strong>11/17 杭州</strong>：西湖開闊、好拍，青少年較不易悶；虹橋 ↔ 杭州東約 1 小時。</li>
+                <li><strong>11/18 蘇州</strong>：拙政園／平江路，更文靜精緻；虹橋 ↔ 蘇州約 25–40 分，當日來回很輕鬆。</li>
+              </ul>
+            </div>
+
+            <div class="info-block">
+              <h3>出發準備</h3>
+              <div class="prep-block">
+                <h4>行李與證件</h4>
+                <ul class="prep-list">
+                  <li><strong>回鄉證／證件</strong>：四人有效證件</li>
+                  <li><strong>動臥</strong>：耳塞、眼罩、薄外套；大行李放架上</li>
+                  <li><strong>疊穿</strong>：11 月中旬上海／杭州白天約 12–18°C，早晚涼</li>
+                  <li><strong>步行鞋</strong>：西湖與蘇州石板路都要走</li>
+                </ul>
+              </div>
+              <div class="prep-block">
+                <h4>出發前 checklist</h4>
+                <ul class="prep-list prep-check">
+                  <li>G900（11/15）與 G895（11/19）動臥四人相鄰</li>
+                  <li>上海酒店 11/16 入住 – 11/20 退房（住 16–19 四晚）</li>
+                  <li>11/17 上海虹橋 ↔ 杭州東 當日來回票（早去晚回）</li>
+                  <li>11/18 上海虹橋 ↔ 蘇州／蘇州北 當日來回票</li>
+                  <li>拙政園等園林可網上預約時段（旺季建議）</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-block tips">
+              <h3>實用小貼士</h3>
+              <ul class="tip-list">
+                <li>
+                  <h4>為何多一天值得</h4>
+                  <p>三晚時杭州與蘇州只能擇一或很趕；四晚可各給一整天，回程日（11/19）只留輕鬆城區＋趕動臥，節奏最適合家庭。</p>
+                </li>
+                <li>
+                  <h4>青少年友善</h4>
+                  <p>不排迪士尼。西湖可租車騎半圈或遊船；蘇州若園林覺得靜，平江路／觀前街小吃補足趣味。</p>
+                </li>
+                <li>
+                  <h4>美食方向</h4>
+                  <p>上海：小籠、生煎、蔥油麵。杭州：東坡肉、龍井蝦仁、片兒川。蘇州：蘇式麵、松鼠桂魚（可分享）。</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="day-panel is-active" role="tabpanel" id="panel-day1" aria-labelledby="tab-day1" data-day="day1">
+            <div class="day-head">
+              <time datetime="2026-11-16">11 月 16 日 · 周一 · 上海抵達</time>
+            </div>
+            <h3>虹橋抵達 · 外灘與豫園</h3>
+            <div class="vibe-collage" aria-label="上海氛圍">
+              <figure class="day-photo">
+                <img src="photos/bund-night.jpg" alt="外灘夜景" width="1920" height="1280" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/yuyuan.jpg" alt="豫園飛檐與庭園" width="1920" height="2282" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/lujiazui.jpg" alt="從浦東看外灘夜景" width="1200" height="800" loading="lazy" />
+              </figure>
+            </div>
+            <p class="vibe-caption">上海味：萬國建築夜燈、豫園飛檐、浦江對岸天際線。</p>
+            <ul>
+              <li><strong>約 06:58</strong> 抵上海虹橋；地鐵 2 號線至人民廣場／南京東路，酒店寄行李或早入住。</li>
+              <li><strong>10:00–12:00</strong> 休整＋早午餐（補動臥睡眠）。</li>
+              <li><strong>13:00–15:30</strong> 豫園／城隍廟（抓重點，人多別硬扛）。</li>
+              <li><strong>16:00–18:30</strong> 外灘散步；可選過江陸家嘴外觀天際線（觀景台二選一即可）。</li>
+              <li><strong>晚餐</strong> 南京東路／外灘一帶；入夜再看燈光。</li>
+            </ul>
+            <div class="day-booking">
+              <h4>當日交通</h4>
+              <p>虹橋 → 市中心：地鐵 2 號線。無需城際票。</p>
+            </div>
+          </article>
+
+          <article class="day-panel" role="tabpanel" id="panel-day2" aria-labelledby="tab-day2" data-day="day2" hidden>
+            <div class="day-head">
+              <time datetime="2026-11-17">11 月 17 日 · 周二 · 杭州西湖</time>
+            </div>
+            <h3>杭州一日遊（風景日）</h3>
+            <div class="day-photos" aria-label="杭州氛圍">
+              <figure class="day-photo">
+                <img src="photos/westlake.jpg" alt="西湖斷橋遠景" width="1280" height="720" loading="lazy" />
+                <figcaption>西湖斷橋：開闊湖面，適合慢慢走或騎行。</figcaption>
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/westlake-boat.jpg" alt="斷橋近景與遊船" width="1280" height="960" loading="lazy" />
+                <figcaption>近橋遊船：比蘇州更「風景大片」的一天。</figcaption>
+              </figure>
+            </div>
+            <ul>
+              <li><strong>07:30–08:00</strong> 酒店出發至虹橋，搭高鐵往<strong>杭州東</strong>（約 1 小時；選 8 點前後班）。</li>
+              <li><strong>09:30–12:30</strong> 西湖：斷橋／白堤或蘇堤一段；可遊船或騎行半圈（青少年較愛動）。</li>
+              <li><strong>12:30–14:00</strong> 湖邊或河坊街午餐（杭幫菜）。</li>
+              <li><strong>14:00–16:30</strong> 河坊街／南山路輕逛；若想安靜可改龍井一帶茶園外觀（時間允許再去）。</li>
+              <li><strong>17:00–18:30</strong> 杭州東高鐵返回虹橋，回酒店晚餐。</li>
+            </ul>
+            <div class="day-note">
+              <h4>為何杭州比蘇州先</h4>
+              <p>西湖景觀開闊、好拍，當「漂亮日」；蘇州園林隔天用較輕鬆的短程高鐵。</p>
+            </div>
+            <div class="day-booking">
+              <h4>當日交通預約</h4>
+              <p>12306 訂虹橋 ↔ 杭州東當日來回；回程建議選 16:30–18:00 區間班次，避免太晚。</p>
+              <p class="booking-links">
+                <a href="https://www.12306.cn/" target="_blank" rel="noopener">12306</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="day-panel" role="tabpanel" id="panel-day3" aria-labelledby="tab-day3" data-day="day3" hidden>
+            <div class="day-head">
+              <time datetime="2026-11-18">11 月 18 日 · 周三 · 蘇州園林</time>
+            </div>
+            <h3>蘇州一日遊（園林日）</h3>
+            <div class="vibe-collage" aria-label="蘇州氛圍">
+              <figure class="day-photo">
+                <img src="photos/suzhou-garden.jpg" alt="拙政園池塘與廊橋" width="1280" height="960" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/pingjiang.jpg" alt="平江路水巷" width="1280" height="923" loading="lazy" />
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/suzhou-garden-2.jpg" alt="拙政園廊橋另一視角" width="1280" height="960" loading="lazy" />
+              </figure>
+            </div>
+            <p class="vibe-caption">蘇州味：拙政園水石亭廊、平江路小巷——偏靜、偏精緻。</p>
+            <ul>
+              <li><strong>08:00–08:30</strong> 虹橋高鐵往<strong>蘇州</strong>或<strong>蘇州北</strong>（約 25–40 分；到站後地鐵／出租至園林區）。</li>
+              <li><strong>09:30–12:00</strong> <strong>拙政園</strong>（或留園二選一即可，不要連趕多園）。</li>
+              <li><strong>12:00–13:30</strong> 蘇式麵或觀前街午餐。</li>
+              <li><strong>14:00–16:30</strong> <strong>平江路</strong>步道＋水巷；累了就坐茶館／咖啡。</li>
+              <li><strong>17:00–18:30</strong> 高鐵返回上海虹橋，回酒店。</li>
+            </ul>
+            <div class="day-note">
+              <h4>節奏提醒</h4>
+              <p>園林安靜，若女兒興趣一般，上午一個園＋下午平江路小吃就夠美；不必塞周莊等遠水鄉。</p>
+            </div>
+            <div class="day-booking">
+              <h4>當日交通預約</h4>
+              <p>虹橋 ↔ 蘇州／蘇州北當日來回；拙政園旺季建議網上預約入場時段。</p>
+              <p class="booking-links">
+                <a href="https://www.12306.cn/" target="_blank" rel="noopener">12306</a>
+                <a href="https://www.szzbg.com/" target="_blank" rel="noopener">拙政園相關資訊</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="day-panel" role="tabpanel" id="panel-day4" aria-labelledby="tab-day4" data-day="day4" hidden>
+            <div class="day-head">
+              <time datetime="2026-11-19">11 月 19 日 · 周四 · 上海輕鬆＋動臥返港</time>
+            </div>
+            <h3>武康路／購物 · 虹橋 G895</h3>
+            <div class="day-photos" aria-label="返程日前氛圍">
+              <figure class="day-photo">
+                <img src="photos/wukang.jpg" alt="武康大樓街景" width="1280" height="1707" loading="lazy" />
+                <figcaption>武康路：老上海街角、好拍、節奏慢。</figcaption>
+              </figure>
+              <figure class="day-photo">
+                <img src="photos/bund-night.jpg" alt="外灘夜景回味" width="1920" height="1280" loading="lazy" />
+                <figcaption>若還想看一眼夜景，午餐前短訪外灘也行。</figcaption>
+              </figure>
+            </div>
+            <ul>
+              <li><strong>10:00–13:00</strong> 前法租界輕鬆線：武康大樓、安福路／武康路；或田子坊短訪。</li>
+              <li><strong>13:00–15:00</strong> 午餐＋淮海路／興業太古匯短暫購物。</li>
+              <li><strong>15:30</strong> 回酒店取行李。</li>
+              <li><strong>16:30–17:00</strong> 出發上海虹橋（地鐵 2 號線），預留安檢。</li>
+              <li><strong>20:15</strong> G895 動臥；<strong>11/20（五）07:25</strong> 抵西九龍。</li>
+            </ul>
+            <div class="day-booking">
+              <h4>當日交通</h4>
+              <p>確認 G895 四人動臥；下午有整段緩衝，比三晚版回程日輕鬆很多。</p>
+              <p class="booking-links">
+                <a href="https://www.highspeed.mtr.com.hk/" target="_blank" rel="noopener">MTR 高鐵票務</a>
+                <a href="https://www.12306.cn/" target="_blank" rel="noopener">12306</a>
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="day-map-block">
+          <h3 class="day-map-title">當日路線</h3>
+          <div class="map-frame">
+            <div id="trip-map" role="img" aria-label="當日旅行路線地圖"></div>
+            <div id="map-setup" class="map-setup" hidden>
+              <p>請在 <code>config.js</code> 填入 Google Maps API key 後重新整理。</p>
+              <ol>
+                <li>開啟 <a href="https://console.cloud.google.com/google/maps-apis/credentials" target="_blank" rel="noopener">Google Maps Credentials</a></li>
+                <li>啟用 <strong>Maps JavaScript API</strong></li>
+                <li>建立 API key，貼到 <code>config.js</code> 的 <code>GOOGLE_MAPS_API_KEY</code></li>
+              </ol>
+            </div>
+          </div>
+          <p class="map-caption" id="map-caption">11/16：虹橋 → 酒店 → 豫園 → 外灘／陸家嘴。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>上海 · 杭州 · 蘇州 · 高鐵動臥 · 2026</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
