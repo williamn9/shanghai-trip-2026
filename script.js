@@ -64,13 +64,13 @@ const routeMeta = {
     caption: "11/15：虹橋 → 酒店 → 豫園 → 外灘／陸家嘴。",
   },
   day2: {
-    caption: "11/16：虹橋 → 杭州東 → 西湖 → 晚回上海。",
+    caption: "11/16：酒店 → 武康路／法租界 → 購物區。",
   },
   day3: {
     caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回上海。",
   },
   day4: {
-    caption: "11/18：武康路輕逛 → 虹橋 G895 動臥返港。",
+    caption: "11/18：退房 → 市區輕鬆 → 虹橋 G895 動臥返港。",
   },
 };
 
@@ -87,8 +87,8 @@ const routes = {
   },
   day2: {
     color: "#b86a2e",
-    path: ["hotel", "hongqiao", "hangzhouEast", "westLake", "hangzhouEast", "hongqiao", "hotel"],
-    markers: ["hotel", "hongqiao", "hangzhouEast", "westLake"],
+    path: ["hotel", "wukang", "hotel"],
+    markers: ["hotel", "wukang"],
   },
   day3: {
     color: "#2f4a5c",
@@ -97,8 +97,8 @@ const routes = {
   },
   day4: {
     color: "#8a4f2a",
-    path: ["hotel", "wukang", "hotel", "hongqiao"],
-    markers: ["hotel", "wukang", "hongqiao"],
+    path: ["hotel", "hongqiao"],
+    markers: ["hotel", "hongqiao"],
   },
 };
 
