@@ -136,7 +136,7 @@ let mapRouteController = null;
 const tabCopy = {
   info: {
     title: "行程資訊",
-    lede: "總覽、動臥高鐵、杭州／蘇州說明與實用貼士。",
+    lede: "總覽、動臥高鐵、上海／蘇州說明與實用貼士。",
   },
   day: {
     title: "每日行程",
