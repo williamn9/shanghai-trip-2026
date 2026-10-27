@@ -17,10 +17,34 @@ const places = {
   },
   hongqiao: { name: "上海虹橋駅", lat: 31.1946, lng: 121.3202, note: "動臥／城際樞紐" },
   hotel: {
-    name: "人民廣場／南京東路酒店區",
-    lat: 31.2335,
-    lng: 121.476,
-    note: "三晚連住基地",
+    name: "新天地／亞朵酒店一帶",
+    lat: 31.2206,
+    lng: 121.4755,
+    note: "合肥路·一大會址站·三晚基地",
+  },
+  parkHotel: {
+    name: "國際飯店",
+    lat: 31.2345,
+    lng: 121.4705,
+    note: "Art Deco 起點",
+  },
+  peaceHotel: {
+    name: "和平飯店",
+    lat: 31.2412,
+    lng: 121.4855,
+    note: "外灘 Art Deco",
+  },
+  dahuchun: {
+    name: "大壺春（生煎）",
+    lat: 31.2388,
+    lng: 121.485,
+    note: "外灘側午餐錨點",
+  },
+  fuxingPark: {
+    name: "復興公園",
+    lat: 31.2195,
+    lng: 121.4635,
+    note: "法租界散步收尾",
   },
   yuyuan: { name: "豫園／城隍廟", lat: 31.2272, lng: 121.492, note: "園林與小吃" },
   bund: { name: "外灘", lat: 31.2404, lng: 121.4905, note: "天際線與夜景" },
@@ -37,6 +61,10 @@ const shortLabels = {
   westKowloon: "西九",
   hongqiao: "虹橋",
   hotel: "飯店",
+  parkHotel: "國際",
+  peaceHotel: "和平",
+  dahuchun: "生煎",
+  fuxingPark: "復興",
   yuyuan: "豫園",
   bund: "外灘",
   lujiazui: "陸家嘴",
@@ -61,16 +89,16 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 酒店 → 豫園 → 外灘／陸家嘴。",
+    caption: "11/15：虹橋 → 新天地酒店 → Art Deco／外灘 → 豫園。",
   },
   day2: {
-    caption: "11/16：酒店 → 武康路／法租界 → 購物區。",
+    caption: "11/16：武康路 → 安福路 → 復興公園 → 新天地。",
   },
   day3: {
-    caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回上海。",
+    caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回酒店。",
   },
   day4: {
-    caption: "11/18：退房 → 市區輕鬆 → 虹橋 G895 動臥返港。",
+    caption: "11/18：新天地輕鬆 → 虹橋 G895 動臥返港。",
   },
 };
 
@@ -82,13 +110,13 @@ const routes = {
   },
   day1: {
     color: "#4a6d82",
-    path: ["hongqiao", "hotel", "yuyuan", "bund", "lujiazui"],
-    markers: ["hongqiao", "hotel", "yuyuan", "bund", "lujiazui"],
+    path: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan", "hotel"],
+    markers: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan"],
   },
   day2: {
     color: "#b86a2e",
-    path: ["hotel", "wukang", "hotel"],
-    markers: ["hotel", "wukang"],
+    path: ["hotel", "wukang", "fuxingPark", "hotel"],
+    markers: ["hotel", "wukang", "fuxingPark"],
   },
   day3: {
     color: "#2f4a5c",
