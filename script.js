@@ -15,12 +15,17 @@ const places = {
     lng: 114.1655,
     note: "G900 動臥出發",
   },
-  hongqiao: { name: "上海虹橋駅", lat: 31.1946, lng: 121.3202, note: "動臥／城際樞紐" },
+  hongqiao: {
+    name: "上海虹橋駅",
+    lat: 31.1946,
+    lng: 121.3202,
+    note: "G900 抵達",
+  },
   hotel: {
-    name: "新天地／亞朵酒店一帶",
+    name: "市區酒店（建議新天地一帶）",
     lat: 31.2206,
     lng: 121.4755,
-    note: "合肥路·一大會址站·三晚基地",
+    note: "15–18 三晚基地",
   },
   parkHotel: {
     name: "國際飯店",
@@ -48,13 +53,25 @@ const places = {
   },
   yuyuan: { name: "豫園／城隍廟", lat: 31.2272, lng: 121.492, note: "園林與小吃" },
   bund: { name: "外灘", lat: 31.2404, lng: 121.4905, note: "天際線與夜景" },
-  lujiazui: { name: "陸家嘴", lat: 31.2397, lng: 121.4998, note: "浦東天際線" },
-  hangzhouEast: { name: "杭州東駅", lat: 30.2913, lng: 120.2122, note: "西湖一日進出" },
-  westLake: { name: "西湖", lat: 30.242, lng: 120.1485, note: "斷橋／蘇堤一帶" },
-  suzhou: { name: "蘇州駅一帶", lat: 31.331, lng: 120.605, note: "轉往園林區" },
-  zhuozheng: { name: "拙政園", lat: 31.3245, lng: 120.629, note: "經典園林（擇一）" },
-  pingjiang: { name: "平江路", lat: 31.3165, lng: 120.6335, note: "水巷步道" },
   wukang: { name: "武康路", lat: 31.2065, lng: 121.4385, note: "前法租界輕逛" },
+  xintiandi: {
+    name: "新天地",
+    lat: 31.2198,
+    lng: 121.4745,
+    note: "石庫門街區",
+  },
+  pudong: {
+    name: "上海浦東機場",
+    lat: 31.1443,
+    lng: 121.8083,
+    note: "MU725 返港",
+  },
+  hkg: {
+    name: "香港國際機場",
+    lat: 22.308,
+    lng: 113.9185,
+    note: "00:15+1 抵達",
+  },
 };
 
 const shortLabels = {
@@ -67,13 +84,10 @@ const shortLabels = {
   fuxingPark: "復興",
   yuyuan: "豫園",
   bund: "外灘",
-  lujiazui: "陸家嘴",
-  hangzhouEast: "杭東",
-  westLake: "西湖",
-  suzhou: "蘇州",
-  zhuozheng: "拙政",
-  pingjiang: "平江",
   wukang: "武康",
+  xintiandi: "新天地",
+  pudong: "浦東",
+  hkg: "HKG",
 };
 
 const dateLabels = {
@@ -89,16 +103,16 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 新天地酒店 → Art Deco／外灘 → 豫園。",
+    caption: "11/15：虹橋 → 市區酒店 → Art Deco／外灘。",
   },
   day2: {
-    caption: "11/16：武康路 → 安福路 → 復興公園 → 新天地。",
+    caption: "11/16：武康路 → 安福／復興公園 → 新天地。",
   },
   day3: {
-    caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回酒店。",
+    caption: "11/17：上海全日彈性日（市區或近郊待定）。",
   },
   day4: {
-    caption: "11/18：新天地輕鬆 → 虹橋 G895 動臥返港。",
+    caption: "11/18：市區輕鬆 → 浦東機場 MU725 → 香港。",
   },
 };
 
@@ -109,52 +123,52 @@ const routes = {
     markers: ["westKowloon", "hongqiao"],
   },
   day1: {
-    color: "#4a6d82",
+    color: "#1f5f6b",
     path: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan", "hotel"],
     markers: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan"],
   },
   day2: {
-    color: "#b86a2e",
-    path: ["hotel", "wukang", "fuxingPark", "hotel"],
-    markers: ["hotel", "wukang", "fuxingPark"],
+    color: "#b08a3c",
+    path: ["hotel", "wukang", "fuxingPark", "xintiandi", "hotel"],
+    markers: ["hotel", "wukang", "fuxingPark", "xintiandi"],
   },
   day3: {
-    color: "#2f4a5c",
-    path: ["hotel", "hongqiao", "suzhou", "zhuozheng", "pingjiang", "suzhou", "hongqiao", "hotel"],
-    markers: ["hotel", "hongqiao", "zhuozheng", "pingjiang"],
+    color: "#0f3d48",
+    path: ["hotel", "xintiandi", "bund", "hotel"],
+    markers: ["hotel", "xintiandi", "bund"],
   },
   day4: {
-    color: "#8a4f2a",
-    path: ["hotel", "hongqiao"],
-    markers: ["hotel", "hongqiao"],
+    color: "#8a6230",
+    path: ["hotel", "pudong", "hkg"],
+    markers: ["hotel", "pudong", "hkg"],
   },
 };
 
 const mapStyles = [
-  { elementType: "geometry", stylers: [{ color: "#e8eef2" }] },
-  { elementType: "labels.text.fill", stylers: [{ color: "#2c3d4f" }] },
-  { elementType: "labels.text.stroke", stylers: [{ color: "#f2f6f8" }] },
+  { elementType: "geometry", stylers: [{ color: "#e6edf2" }] },
+  { elementType: "labels.text.fill", stylers: [{ color: "#3a4553" }] },
+  { elementType: "labels.text.stroke", stylers: [{ color: "#eef2f6" }] },
   { featureType: "poi", stylers: [{ visibility: "off" }] },
   { featureType: "transit", stylers: [{ visibility: "simplified" }] },
   {
     featureType: "road",
     elementType: "geometry",
-    stylers: [{ color: "#f7fafc" }],
+    stylers: [{ color: "#f5f8fa" }],
   },
   {
     featureType: "road",
     elementType: "geometry.stroke",
-    stylers: [{ color: "#d0dbe3" }],
+    stylers: [{ color: "#ced8e0" }],
   },
   {
     featureType: "water",
     elementType: "geometry",
-    stylers: [{ color: "#b7cdd9" }],
+    stylers: [{ color: "#a9c5cf" }],
   },
   {
     featureType: "administrative",
     elementType: "geometry.stroke",
-    stylers: [{ color: "#b7c4cf" }],
+    stylers: [{ color: "#b5c2cc" }],
   },
 ];
 
@@ -164,11 +178,11 @@ let mapRouteController = null;
 const tabCopy = {
   info: {
     title: "行程資訊",
-    lede: "總覽、動臥高鐵、上海／蘇州說明與實用貼士。",
+    lede: "總覽、已訂交通、乘客名單與實用提醒。",
   },
   day: {
     title: "每日行程",
-    lede: "頂部選日期，只顯示當日行程、路線與預約連結。",
+    lede: "頂部選日期，只顯示當日骨架與實用提醒。",
   },
 };
 
@@ -188,12 +202,12 @@ function hideMapSetup() {
 
 function markerIcon(label, isHub = false) {
   const size = isHub ? 38 : 32;
-  const bg = isHub ? "#b86a2e" : "#2f4a5c";
+  const bg = isHub ? "#b08a3c" : "#0f3d48";
   const svg = `
     <svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
-      <circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${bg}" stroke="#fafcfd" stroke-width="2"/>
+      <circle cx="${size / 2}" cy="${size / 2}" r="${size / 2 - 2}" fill="${bg}" stroke="#f7f9fb" stroke-width="2"/>
       <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
-        fill="#fafcfd" font-size="${isHub ? 10 : 11}" font-family="sans-serif" font-weight="700">${label}</text>
+        fill="#f7f9fb" font-size="${isHub ? 10 : 11}" font-family="sans-serif" font-weight="700">${label}</text>
     </svg>`;
 
   return {
