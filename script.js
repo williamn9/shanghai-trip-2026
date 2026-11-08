@@ -22,10 +22,10 @@ const places = {
     note: "G900 抵達",
   },
   hotel: {
-    name: "市區酒店（建議新天地一帶）",
-    lat: 31.2206,
-    lng: 121.4755,
-    note: "15–18 三晚基地",
+    name: "虹橋荷逸唐（北新涇）",
+    lat: 31.2182,
+    lng: 121.3745,
+    note: "15–18 · 兩間露台大床房",
   },
   parkHotel: {
     name: "國際飯店",
@@ -124,7 +124,7 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 市區酒店 → Art Deco／外灘。",
+    caption: "11/15：虹橋 → 北新涇荷逸唐 → Art Deco／外灘。",
   },
   day2: {
     caption: "11/16：武康路 → 安福／復興公園 → 新天地。",
