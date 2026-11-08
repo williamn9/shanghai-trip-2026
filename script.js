@@ -60,6 +60,24 @@ const places = {
     lng: 121.4745,
     note: "石庫門街區",
   },
+  suzhou: {
+    name: "蘇州駅一帶",
+    lat: 31.331,
+    lng: 120.605,
+    note: "轉往園林區",
+  },
+  zhuozheng: {
+    name: "拙政園",
+    lat: 31.3245,
+    lng: 120.629,
+    note: "經典園林（擇一）",
+  },
+  pingjiang: {
+    name: "平江路",
+    lat: 31.3165,
+    lng: 120.6335,
+    note: "水巷步道",
+  },
   pudong: {
     name: "上海浦東機場",
     lat: 31.1443,
@@ -86,6 +104,9 @@ const shortLabels = {
   bund: "外灘",
   wukang: "武康",
   xintiandi: "新天地",
+  suzhou: "蘇州",
+  zhuozheng: "拙政",
+  pingjiang: "平江",
   pudong: "浦東",
   hkg: "HKG",
 };
@@ -109,7 +130,7 @@ const routeMeta = {
     caption: "11/16：武康路 → 安福／復興公園 → 新天地。",
   },
   day3: {
-    caption: "11/17：上海全日彈性日（市區或近郊待定）。",
+    caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回酒店。",
   },
   day4: {
     caption: "11/18：市區輕鬆 → 浦東機場 MU725 → 香港。",
@@ -134,8 +155,8 @@ const routes = {
   },
   day3: {
     color: "#0f3d48",
-    path: ["hotel", "xintiandi", "bund", "hotel"],
-    markers: ["hotel", "xintiandi", "bund"],
+    path: ["hotel", "hongqiao", "suzhou", "zhuozheng", "pingjiang", "suzhou", "hongqiao", "hotel"],
+    markers: ["hotel", "hongqiao", "zhuozheng", "pingjiang"],
   },
   day4: {
     color: "#8a6230",
