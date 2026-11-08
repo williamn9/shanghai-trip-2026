@@ -52,6 +52,18 @@ const places = {
     note: "法租界散步收尾",
   },
   yuyuan: { name: "豫園／城隍廟", lat: 31.2272, lng: 121.492, note: "園林與小吃" },
+  nanxiangYuyuan: {
+    name: "南翔饅頭店（豫園）",
+    lat: 31.2278,
+    lng: 121.4922,
+    note: "① 小籠包 · 上樓堂食",
+  },
+  nanxiangNanjing: {
+    name: "南翔饅頭店（南京東路）",
+    lat: 31.2358,
+    lng: 121.4785,
+    note: "② 小籠包 · 第一食品 3F",
+  },
   bund: { name: "外灘", lat: 31.2404, lng: 121.4905, note: "天際線與夜景" },
   wukang: { name: "武康路", lat: 31.2065, lng: 121.4385, note: "前法租界輕逛" },
   xintiandi: {
@@ -119,6 +131,8 @@ const shortLabels = {
   dahuchun: "生煎",
   fuxingPark: "復興",
   yuyuan: "豫園",
+  nanxiangYuyuan: "南翔①",
+  nanxiangNanjing: "南翔②",
   bund: "外灘",
   wukang: "武康",
   xintiandi: "新天地",
@@ -145,10 +159,10 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 北新涇荷逸唐 → 上海科技館 → 可選外灘。",
+    caption: "11/15：虹橋 → 酒店 → 科技館 → ①南翔小籠（豫園）→ 可選外灘。",
   },
   day2: {
-    caption: "11/16：北新涇 → 南京東路百联ZX（鬼滅／原神）→ 回酒店。",
+    caption: "11/16：ZX → ②南翔小籠（南京東路）→ 回酒店。",
   },
   day3: {
     caption: "11/17：北新涇 → 虹橋 → 蘇州拙政園／平江 → 晚回酒店。",
@@ -166,13 +180,13 @@ const routes = {
   },
   day1: {
     color: "#1f5f6b",
-    path: ["hongqiao", "hotel", "scienceMuseum", "bund", "hotel"],
-    markers: ["hongqiao", "hotel", "scienceMuseum", "bund"],
+    path: ["hongqiao", "hotel", "scienceMuseum", "nanxiangYuyuan", "bund", "hotel"],
+    markers: ["hongqiao", "hotel", "scienceMuseum", "nanxiangYuyuan", "bund"],
   },
   day2: {
     color: "#b08a3c",
-    path: ["hotel", "nanjingEast", "bailianZx", "hotel"],
-    markers: ["hotel", "nanjingEast", "bailianZx"],
+    path: ["hotel", "bailianZx", "nanxiangNanjing", "bailianZx", "hotel"],
+    markers: ["hotel", "bailianZx", "nanxiangNanjing"],
   },
   day3: {
     color: "#0f3d48",
