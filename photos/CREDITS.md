@@ -12,6 +12,8 @@ Real photographs used on this trip dossier. AI-generated images were removed.
 | `zx-mall-exterior.jpg` | [百联ZX创趣场.jpg](https://commons.wikimedia.org/wiki/File:%E7%99%BE%E8%81%94ZX%E5%88%9B%E8%B6%A3%E5%9C%BA.jpg) | Bailian ZX facade on Nanjing Rd |
 | `zx-street.jpg` | [Bailian ZX 20240204150048.jpg](https://commons.wikimedia.org/wiki/File:Bailian_ZX_20240204150048.jpg) | ZX street view in rain |
 | `snack-alley.jpg` | [Xiaolongbao Shanghai.jpg](https://commons.wikimedia.org/wiki/File:Xiaolongbao_Shanghai.jpg) | Shanghai xiaolongbao (food expectation) |
+| `science-museum.jpg` | [Shanghai Science and Technology Museum.jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Science_and_Technology_Museum.jpg) | Science museum exterior |
+| `science-museum-area.jpg` | [Shanghai Science and Technology Museum from Shanghai Museum East (20251026161438).jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Science_and_Technology_Museum_from_Shanghai_Museum_East_(20251026161438).jpg) | Science museum area view |
 
 Older files in this folder (`bund-night.jpg`, `yuyuan.jpg`, etc.) were already real location photos from the prior dossier set.
 
