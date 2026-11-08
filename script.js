@@ -60,6 +60,18 @@ const places = {
     lng: 121.4745,
     note: "石庫門街區",
   },
+  bailianZx: {
+    name: "百联ZX创趣场",
+    lat: 31.2375,
+    lng: 121.4848,
+    note: "鬼滅快闪 · 原神谷子",
+  },
+  nanjingEast: {
+    name: "南京東路站",
+    lat: 31.238,
+    lng: 121.4845,
+    note: "2 號線 · ZX 出站",
+  },
   suzhou: {
     name: "蘇州駅一帶",
     lat: 31.331,
@@ -104,6 +116,8 @@ const shortLabels = {
   bund: "外灘",
   wukang: "武康",
   xintiandi: "新天地",
+  bailianZx: "ZX",
+  nanjingEast: "南京東",
   suzhou: "蘇州",
   zhuozheng: "拙政",
   pingjiang: "平江",
@@ -124,16 +138,16 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 北新涇荷逸唐 → Art Deco／外灘。",
+    caption: "11/15：虹橋 → 北新涇荷逸唐 → 外灘輕走。",
   },
   day2: {
-    caption: "11/16：武康路 → 安福／復興公園 → 新天地。",
+    caption: "11/16：北新涇 → 南京東路百联ZX（鬼滅／原神）→ 回酒店。",
   },
   day3: {
-    caption: "11/17：虹橋 → 蘇州 → 拙政園／平江路 → 晚回酒店。",
+    caption: "11/17：北新涇 → 虹橋 → 蘇州拙政園／平江 → 晚回酒店。",
   },
   day4: {
-    caption: "11/18：市區輕鬆 → 浦東機場 MU725 → 香港。",
+    caption: "11/18：酒店約 17:00 送機 → 浦東 MU725 → 香港。",
   },
 };
 
@@ -150,8 +164,8 @@ const routes = {
   },
   day2: {
     color: "#b08a3c",
-    path: ["hotel", "wukang", "fuxingPark", "xintiandi", "hotel"],
-    markers: ["hotel", "wukang", "fuxingPark", "xintiandi"],
+    path: ["hotel", "nanjingEast", "bailianZx", "hotel"],
+    markers: ["hotel", "nanjingEast", "bailianZx"],
   },
   day3: {
     color: "#0f3d48",
