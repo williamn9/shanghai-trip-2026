@@ -72,6 +72,12 @@ const places = {
     lng: 121.4845,
     note: "2 號線 · ZX 出站",
   },
+  scienceMuseum: {
+    name: "上海科技館",
+    lat: 31.2195,
+    lng: 121.544,
+    note: "2026 煥新 · 互動展",
+  },
   suzhou: {
     name: "蘇州駅一帶",
     lat: 31.331,
@@ -118,6 +124,7 @@ const shortLabels = {
   xintiandi: "新天地",
   bailianZx: "ZX",
   nanjingEast: "南京東",
+  scienceMuseum: "科技館",
   suzhou: "蘇州",
   zhuozheng: "拙政",
   pingjiang: "平江",
@@ -138,7 +145,7 @@ const routeMeta = {
     caption: "11/14：香港西九龍 → G900 動臥過夜 → 翌日虹橋。",
   },
   day1: {
-    caption: "11/15：虹橋 → 北新涇荷逸唐 → 外灘輕走。",
+    caption: "11/15：虹橋 → 北新涇荷逸唐 → 上海科技館 → 可選外灘。",
   },
   day2: {
     caption: "11/16：北新涇 → 南京東路百联ZX（鬼滅／原神）→ 回酒店。",
@@ -159,8 +166,8 @@ const routes = {
   },
   day1: {
     color: "#1f5f6b",
-    path: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan", "hotel"],
-    markers: ["hongqiao", "hotel", "parkHotel", "peaceHotel", "dahuchun", "bund", "yuyuan"],
+    path: ["hongqiao", "hotel", "scienceMuseum", "bund", "hotel"],
+    markers: ["hongqiao", "hotel", "scienceMuseum", "bund"],
   },
   day2: {
     color: "#b08a3c",
