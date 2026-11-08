@@ -792,6 +792,18 @@ a {
   letter-spacing: 0.04em;
 }
 
+.site-footer .photo-credit {
+  margin-top: 0.55rem;
+  font-family: var(--font-body, inherit);
+  font-size: 0.8rem;
+  letter-spacing: 0;
+  opacity: 0.85;
+}
+
+.site-footer .photo-credit a {
+  color: inherit;
+}
+
 @keyframes rise {
   from {
     opacity: 0;
