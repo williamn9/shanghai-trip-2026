@@ -1,17 +1,17 @@
 :root {
-  --ink: #15202b;
-  --ink-soft: #2c3d4f;
-  --mist: #d7e3eb;
-  --fog: #f2f6f8;
-  --canal: #4a6d82;
-  --canal-deep: #2f4a5c;
-  --lantern: #b86a2e;
-  --lantern-soft: #d4924f;
-  --paper: #fafcfd;
-  --line: rgba(21, 32, 43, 0.12);
-  --shadow-soft: 0 18px 50px rgba(21, 32, 43, 0.08);
-  --font-display: "Shippori Mincho", "Hiragino Mincho ProN", serif;
-  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif;
+  --ink: #121820;
+  --ink-soft: #3a4553;
+  --mist: #d4dde8;
+  --fog: #eef2f6;
+  --river: #1f5f6b;
+  --river-deep: #0f3d48;
+  --brass: #b08a3c;
+  --brass-soft: #c9a85a;
+  --paper: #f7f9fb;
+  --line: rgba(18, 24, 32, 0.12);
+  --shadow-soft: 0 18px 50px rgba(18, 24, 32, 0.08);
+  --font-display: "Noto Serif TC", "Songti TC", "PMingLiU", serif;
+  --font-body: "Noto Sans TC", "PingFang TC", "Helvetica Neue", sans-serif;
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
@@ -32,9 +32,9 @@ body {
   font-weight: 400;
   line-height: 1.7;
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(74, 109, 130, 0.16), transparent 60%),
-    radial-gradient(900px 500px at 100% 20%, rgba(184, 106, 46, 0.08), transparent 55%),
-    linear-gradient(180deg, var(--fog) 0%, var(--paper) 40%, var(--mist) 100%);
+    radial-gradient(1100px 560px at 8% -8%, rgba(31, 95, 107, 0.18), transparent 58%),
+    radial-gradient(900px 480px at 100% 12%, rgba(176, 138, 60, 0.1), transparent 52%),
+    linear-gradient(180deg, #e8eef3 0%, var(--paper) 42%, #dce6ee 100%);
   background-attachment: fixed;
 }
 
@@ -66,7 +66,7 @@ a {
 .site-header.is-scrolled {
   color: var(--ink);
   border-bottom-color: var(--line);
-  background: rgba(250, 252, 253, 0.94);
+  background: rgba(247, 249, 251, 0.94);
   backdrop-filter: blur(14px);
 }
 
@@ -92,7 +92,7 @@ a {
   justify-content: center;
   min-height: 2rem;
   padding: 0.3rem 0.7rem;
-  border: 1px solid rgba(250, 252, 253, 0.4);
+  border: 1px solid rgba(247, 249, 251, 0.4);
   border-radius: 0.28rem;
   background: transparent;
   color: inherit;
@@ -115,7 +115,7 @@ a {
 }
 
 .site-header.is-scrolled .day-tab {
-  border-color: rgba(21, 32, 43, 0.2);
+  border-color: rgba(18, 24, 32, 0.2);
 }
 
 .site-header.is-scrolled .day-tab.is-active {
@@ -138,9 +138,9 @@ a {
   background:
     linear-gradient(
       105deg,
-      rgba(12, 22, 36, 0.82) 0%,
-      rgba(21, 32, 43, 0.45) 48%,
-      rgba(21, 32, 43, 0.2) 100%
+      rgba(10, 18, 28, 0.86) 0%,
+      rgba(15, 61, 72, 0.45) 48%,
+      rgba(18, 24, 32, 0.22) 100%
     ),
     url("photos/hero.jpg") center / cover no-repeat;
   animation: hero-drift 22s ease-in-out infinite alternate;
@@ -167,12 +167,12 @@ a {
 
 .hero h1 {
   margin: 0 0 1rem;
-  max-width: 12ch;
+  max-width: 14ch;
   font-family: var(--font-display);
   font-size: clamp(1.45rem, 2.8vw, 2rem);
   font-weight: 500;
   line-height: 1.35;
-  color: rgba(242, 246, 248, 0.92);
+  color: rgba(238, 242, 246, 0.92);
   animation: rise 0.9s var(--ease) 0.12s both;
 }
 
@@ -180,7 +180,7 @@ a {
   margin: 0 0 2rem;
   max-width: 28ch;
   font-size: 1.05rem;
-  color: rgba(215, 227, 235, 0.9);
+  color: rgba(212, 221, 232, 0.92);
   animation: rise 0.9s var(--ease) 0.22s both;
 }
 
@@ -222,14 +222,14 @@ a {
 
 .btn-ghost {
   background: transparent;
-  border-color: rgba(242, 246, 248, 0.45);
+  border-color: rgba(247, 249, 251, 0.45);
   color: var(--paper);
 }
 
 .btn-ghost:hover,
 .btn-ghost:focus-visible {
   border-color: var(--paper);
-  background: rgba(242, 246, 248, 0.08);
+  background: rgba(247, 249, 251, 0.08);
 }
 
 .section {
@@ -274,7 +274,7 @@ a {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--canal);
+  color: var(--river);
 }
 
 .meta-grid dd {
@@ -282,10 +282,6 @@ a {
   font-size: 1.08rem;
   font-family: var(--font-display);
   line-height: 1.5;
-}
-
-.route-map {
-  background: linear-gradient(180deg, transparent, rgba(74, 109, 130, 0.07) 35%, transparent);
 }
 
 .map-frame {
@@ -310,7 +306,7 @@ a {
   align-content: center;
   gap: 0.85rem;
   padding: 1.5rem;
-  background: rgba(242, 246, 248, 0.96);
+  background: rgba(238, 242, 246, 0.96);
   color: var(--ink-soft);
 }
 
@@ -331,7 +327,7 @@ a {
 }
 
 .map-setup a {
-  color: var(--canal-deep);
+  color: var(--river-deep);
   text-decoration: underline;
   text-underline-offset: 0.15em;
 }
@@ -387,7 +383,7 @@ a {
 
 .info-lede {
   margin: 0 0 1.5rem;
-  max-width: 36ch;
+  max-width: 42ch;
   color: var(--ink-soft);
 }
 
@@ -399,7 +395,8 @@ a {
 }
 
 .log-block,
-.hotel {
+.hotel,
+.passenger-block {
   padding: 1.25rem 0 0.25rem;
   border-top: 1px solid var(--line);
 }
@@ -407,7 +404,8 @@ a {
 .log-block h4,
 .hotel h4,
 .tip-list h4,
-.prep-block h4 {
+.prep-block h4,
+.passenger-block h4 {
   margin: 0 0 0.65rem;
   font-family: var(--font-display);
   font-size: 1.15rem;
@@ -416,7 +414,7 @@ a {
 
 .time-line {
   margin: 0 0 1rem;
-  color: var(--lantern);
+  color: var(--brass);
   font-weight: 500;
 }
 
@@ -431,12 +429,12 @@ a {
 .route span {
   font-variant-numeric: tabular-nums;
   font-weight: 700;
-  color: var(--canal-deep);
+  color: var(--river-deep);
 }
 
 .route.arrow {
   justify-content: center;
-  color: var(--canal);
+  color: var(--river);
   opacity: 0.55;
   letter-spacing: 0;
 }
@@ -450,6 +448,51 @@ a {
 .hotel p {
   margin: 0.4rem 0 0;
   color: var(--ink-soft);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0.35rem 0 0.5rem;
+}
+
+.passenger-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.passenger-table th,
+.passenger-table td {
+  padding: 0.7rem 0.85rem 0.7rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.passenger-table th {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--river);
+}
+
+.passenger-table td {
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+}
+
+.passenger-table td:first-child {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.passenger-table .muted {
+  display: inline-block;
+  margin-left: 0.35rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+  font-size: 0.88em;
 }
 
 .day-panels {
@@ -477,7 +520,7 @@ a {
   font-family: var(--font-display);
   font-size: 0.95rem;
   font-weight: 700;
-  color: var(--lantern);
+  color: var(--brass);
   letter-spacing: 0.04em;
 }
 
@@ -653,7 +696,7 @@ a {
   top: 0.35rem;
   width: 0.85rem;
   height: 0.85rem;
-  border: 1.5px solid rgba(21, 32, 43, 0.35);
+  border: 1.5px solid rgba(18, 24, 32, 0.35);
   border-radius: 0.15rem;
 }
 
@@ -682,17 +725,6 @@ a {
   margin-top: 0.55rem;
 }
 
-.booking-list h3 {
-  margin: 0 0 0.65rem;
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-}
-
-.booking-list p + p {
-  margin-top: 0.65rem;
-}
-
 .booking-links {
   display: flex;
   flex-wrap: wrap;
@@ -701,7 +733,7 @@ a {
 
 .booking-links a,
 .inline-link {
-  color: var(--canal-deep);
+  color: var(--river-deep);
   text-decoration: underline;
   text-underline-offset: 0.18em;
   font-weight: 500;
@@ -711,7 +743,7 @@ a {
 .booking-links a:focus-visible,
 .inline-link:hover,
 .inline-link:focus-visible {
-  color: var(--lantern);
+  color: var(--brass);
 }
 
 .site-footer {
@@ -758,15 +790,15 @@ a {
     background:
       linear-gradient(
         180deg,
-        rgba(12, 22, 36, 0.4) 0%,
-        rgba(12, 22, 36, 0.72) 55%,
-        rgba(12, 22, 36, 0.9) 100%
+        rgba(10, 18, 28, 0.4) 0%,
+        rgba(10, 18, 28, 0.72) 55%,
+        rgba(10, 18, 28, 0.92) 100%
       ),
       url("photos/hero.jpg") center / cover no-repeat;
   }
 
   .brand {
-    max-width: 10ch;
+    max-width: 8ch;
   }
 
   .meta-grid,
@@ -821,6 +853,12 @@ a {
 
   .btn {
     width: 100%;
+  }
+
+  .passenger-table th,
+  .passenger-table td {
+    padding-right: 0.55rem;
+    font-size: 0.88rem;
   }
 }
 
