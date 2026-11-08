@@ -639,6 +639,38 @@ a {
   line-height: 1.55;
 }
 
+.commute-box {
+  margin: 1rem 0 1.25rem;
+  padding: 0.95rem 1.05rem;
+  border-left: 3px solid var(--accent, #1f5f6b);
+  background: color-mix(in srgb, var(--mist, #eef2f6) 82%, white);
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+.commute-box h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.98rem;
+}
+
+.commute-box ol,
+.commute-box ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.commute-box li + li {
+  margin-top: 0.35rem;
+}
+
+.commute-box .eta,
+.prep-list .eta {
+  color: var(--ink);
+  font-weight: 600;
+}
+
 .day-panel ul {
   margin: 0;
   padding-left: 1.15rem;
