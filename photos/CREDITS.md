@@ -14,6 +14,8 @@ Real photographs used on this trip dossier. AI-generated images were removed.
 | `snack-alley.jpg` | [Xiaolongbao Shanghai.jpg](https://commons.wikimedia.org/wiki/File:Xiaolongbao_Shanghai.jpg) | Shanghai xiaolongbao (food expectation) |
 | `science-museum.jpg` | [Shanghai Science and Technology Museum.jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Science_and_Technology_Museum.jpg) | Science museum exterior |
 | `science-museum-area.jpg` | [Shanghai Science and Technology Museum from Shanghai Museum East (20251026161438).jpg](https://commons.wikimedia.org/wiki/File:Shanghai_Science_and_Technology_Museum_from_Shanghai_Museum_East_(20251026161438).jpg) | Science museum area view |
+| `shanghai-metro-line2.png` | [Shanghai Metro Line 2.png](https://commons.wikimedia.org/wiki/File:Shanghai_Metro_Line_2.png) (Yveltal, CC BY-SA 4.0) | Full Line 2 schematic |
+| `line2-beixinjing-hongqiao.jpg` | Trip dossier schematic (generated for this itinerary) | Hotel ↔ Hongqiao strip: 北新涇–淞虹路–虹橋2號航站樓–虹橋火車站 |
 
 Older files in this folder (`bund-night.jpg`, `yuyuan.jpg`, etc.) were already real location photos from the prior dossier set.
 

@@ -628,6 +628,36 @@ a {
   line-height: 1.5;
 }
 
+.map-photos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+  margin: 1rem 0 0.25rem;
+}
+
+.map-photos .day-photo,
+.commute-box .map-figure {
+  margin-bottom: 0;
+}
+
+.commute-box .map-figure {
+  margin-top: 0.85rem;
+}
+
+.day-photo.map-figure img {
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center;
+  background: #fff;
+  max-height: min(42vh, 320px);
+  border: 1px solid color-mix(in srgb, var(--mist, #eef2f6) 70%, #c5d0da);
+}
+
+.day-photo.map-figure--wide img {
+  max-height: min(36vh, 260px);
+  width: 100%;
+}
+
 .vibe-collage .day-photo figcaption {
   display: none;
 }
