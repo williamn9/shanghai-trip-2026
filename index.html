@@ -533,11 +533,11 @@
           <div class="map-frame">
             <div id="trip-map" role="img" aria-label="當日旅行路線地圖"></div>
             <div id="map-setup" class="map-setup" hidden>
-              <p>請在 <code>config.js</code> 填入 Google Maps API key 後重新整理。</p>
+              <p>地圖需本機 API key：複製 <code>config.example.js</code> → <code>config.js</code>（已 gitignore，勿提交）後重新整理。</p>
               <ol>
                 <li>開啟 <a href="https://console.cloud.google.com/google/maps-apis/credentials" target="_blank" rel="noopener">Google Maps Credentials</a></li>
-                <li>啟用 <strong>Maps JavaScript API</strong></li>
-                <li>建立 API key，貼到 <code>config.js</code> 的 <code>GOOGLE_MAPS_API_KEY</code></li>
+                <li>啟用 <strong>Maps JavaScript API</strong>；限制 HTTP referrer</li>
+                <li>建立 API key，只寫進本機 <code>config.js</code> 的 <code>GOOGLE_MAPS_API_KEY</code></li>
               </ol>
             </div>
           </div>
@@ -552,7 +552,7 @@
     <p class="photo-credit">行程照片為實景（Wikimedia Commons 等）；來源見 <a href="photos/CREDITS.md">photos/CREDITS.md</a>。</p>
   </footer>
 
-  <script src="config.js"></script>
+  <script src="config.example.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
